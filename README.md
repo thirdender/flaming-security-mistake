@@ -1,3 +1,7 @@
 # Flaming Security Mistake
 
-This repo requires many npm packages with [known vulnerabilities](https://nodesecurity.io/advisories). You probably should not require this package in production... However, feel free to use this repo as a starting point for testing security scanners.
+This repo includes many security mistakes that should be discovered by SAST tools.
+
+* `package-lock.json` includes Node packages with [known vulnerabilities](https://nodesecurity.io/advisories)
+* `Gemfile.lock` includes dependencies that are listed as insecure in the [ruby-advisory-db](https://github.com/rubysec/ruby-advisory-db)
+* `index.js` includes code meant to trigger the [SonarJS](https://www.sonarsource.com/products/codeanalyzers/sonarjs.html) vulnerability rules
