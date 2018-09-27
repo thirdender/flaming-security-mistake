@@ -44,7 +44,7 @@ var SonarJS = {
   // https://rules.sonarsource.com/javascript/type/Vulnerability/RSPEC-1442
   'RSPEC-1442': function() {
     alert('Unexpected Condition');
-  }
+  },
 
   // Web SQL databases should not be used
   // https://rules.sonarsource.com/javascript/type/Vulnerability/RSPEC-2817
@@ -75,5 +75,5 @@ var SonarJS = {
   // https://rules.sonarsource.com/javascript/type/Vulnerability/RSPEC-2228
   'RSPEC-2228': function(password_entered) {
     console.log(password_entered);
-  },
+  }
 };
